@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Onedrive\\Source Code\\DBFusion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\factories\\mysqldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:factories\\mysqldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\databases\\mongodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:databases\\mongodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\factories\\sqlitedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:factories\\sqlitedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\utilities\\errorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:utilities\\errorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\factories\\databasefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:factories\\databasefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\models\\dbauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:models\\dbauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\dbfusion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:dbfusion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\factories\\accessdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:factories\\accessdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\factories\\the databasetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:factories\\the databasetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\databases\\sqldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:databases\\sqldatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\interfaces\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:interfaces\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|d:\\onedrive\\source code\\dbfusion\\databases\\postgredatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BDF76D1-B165-48F8-A0AC-DCE5AEF1C73D}|DBFusion.csproj|solutionrelative:databases\\postgredatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorHandler.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Utilities\\ErrorHandler.cs",
+              "RelativeDocumentMoniker": "Utilities\\ErrorHandler.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Utilities\\ErrorHandler.cs",
+              "RelativeToolTip": "Utilities\\ErrorHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T01:32:28.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Utilities\\Logger.cs",
+              "RelativeDocumentMoniker": "Utilities\\Logger.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Utilities\\Logger.cs",
+              "RelativeToolTip": "Utilities\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T01:30:17.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccessDatabase.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\AccessDatabase.cs",
+              "RelativeDocumentMoniker": "Factories\\AccessDatabase.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\AccessDatabase.cs",
+              "RelativeToolTip": "Factories\\AccessDatabase.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:52:51.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MySqlDatabase.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\MySqlDatabase.cs",
+              "RelativeDocumentMoniker": "Factories\\MySqlDatabase.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\MySqlDatabase.cs",
+              "RelativeToolTip": "Factories\\MySqlDatabase.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAADwv2wAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:39:51.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SQLiteDatabase.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\SQLiteDatabase.cs",
+              "RelativeDocumentMoniker": "Factories\\SQLiteDatabase.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\SQLiteDatabase.cs",
+              "RelativeToolTip": "Factories\\SQLiteDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:33:36.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "The DatabaseType.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\The DatabaseType.cs",
+              "RelativeDocumentMoniker": "Factories\\The DatabaseType.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\The DatabaseType.cs",
+              "RelativeToolTip": "Factories\\The DatabaseType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:30:14.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MongoDatabase.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Databases\\MongoDatabase.cs",
+              "RelativeDocumentMoniker": "Databases\\MongoDatabase.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Databases\\MongoDatabase.cs",
+              "RelativeToolTip": "Databases\\MongoDatabase.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswGQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:24:23.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DbAuth.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Models\\DbAuth.cs",
+              "RelativeDocumentMoniker": "Models\\DbAuth.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Models\\DbAuth.cs",
+              "RelativeToolTip": "Models\\DbAuth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:14:11.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDatabase.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Interfaces\\IDatabase.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IDatabase.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Interfaces\\IDatabase.cs",
+              "RelativeToolTip": "Interfaces\\IDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:07:08.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SqlDatabase.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Databases\\SqlDatabase.cs",
+              "RelativeDocumentMoniker": "Databases\\SqlDatabase.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Databases\\SqlDatabase.cs",
+              "RelativeToolTip": "Databases\\SqlDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:02:54.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PostgreDatabase.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Databases\\PostgreDatabase.cs",
+              "RelativeDocumentMoniker": "Databases\\PostgreDatabase.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Databases\\PostgreDatabase.cs",
+              "RelativeToolTip": "Databases\\PostgreDatabase.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T00:00:33.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseFactory.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\DatabaseFactory.cs",
+              "RelativeDocumentMoniker": "Factories\\DatabaseFactory.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Factories\\DatabaseFactory.cs",
+              "RelativeToolTip": "Factories\\DatabaseFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T23:57:50.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DBFusion",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\DBFusion.csproj",
+              "RelativeDocumentMoniker": "DBFusion.csproj",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\DBFusion.csproj",
+              "RelativeToolTip": "DBFusion.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-23T23:54:03.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Onedrive\\Source Code\\DBFusion\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Onedrive\\Source Code\\DBFusion\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T22:40:02.336Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
