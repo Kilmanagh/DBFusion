@@ -24,23 +24,28 @@ This document tracks the progress and requirements for the DBFusion project. Tas
 
 - [ ] Finalize and document the public API
 - [ ] Add support for additional databases:
-    - [ ] Oracle Database
+    - [x] Oracle Database (implemented, needs real CRUD logic)
+    - [x] MariaDB (implemented, needs real CRUD logic)
+    - [x] Cassandra (implemented, needs real CRUD logic)
+    - [x] Redis (implemented, needs real CRUD logic)
+    - [x] Elasticsearch (implemented, needs real CRUD logic)
+    - [x] Neo4j (**stub**)
+    - [x] DynamoDB (**stub**)
+    - [x] Couchbase (**stub**)
+    - [x] InfluxDB (**stub**)
+    - [x] Snowflake (**stub**)
     - [ ] MongoDB
-    - [ ] MariaDB
-    - [ ] Cassandra
+    - [ ] PostgreSQL
+    - [ ] MySQL
+    - [ ] SQLite
+    - [ ] Access
     - [ ] Couchbase
-    - [ ] DynamoDB
     - [ ] Firestore / Firebase Realtime Database
-    - [ ] Elasticsearch
-    - [ ] Neo4j
     - [ ] DuckDB
     - [ ] TimescaleDB
-    - [ ] InfluxDB
     - [ ] ClickHouse
-    - [ ] Snowflake
     - [ ] SAP HANA
     - [ ] IBM Db2
-    - [ ] Redis
     - [ ] Azure SQL
     - [ ] AWS RDS
     - [ ] Google Cloud SQL
@@ -59,6 +64,12 @@ This document tracks the progress and requirements for the DBFusion project. Tas
     - [ ] ScyllaDB
     - [ ] Memcached
     - [ ] Amazon Aurora
+
+> **Legend:**  
+> - **[x] Name (implemented, needs real CRUD logic)**: Class exists, but may need more robust implementation.  
+> - **[x] Name (**stub**)**: Class exists as a stub (skeleton), needs full implementation.  
+> - **[ ] Name**: Not yet implemented.
+
 - [ ] Implement migration helpers (schema migration, data migration)
 - [ ] Add CLI tool for managing and testing connections
 - [ ] Write integration tests for real-world scenarios
@@ -89,6 +100,7 @@ This document tracks the progress and requirements for the DBFusion project. Tas
 | Solution/Project    | ✅ Complete   |                                                            |
 | Core DBs            | ✅ Complete   | SQL Server, PostgreSQL, MongoDB, MySQL, SQLite, Access     |
 | New DBs (Top 5)     | ✅ Complete   | Oracle, MariaDB, Cassandra, Redis, Elasticsearch           |
+| Next 5 DBs          | ⚠️ Stubs      | Neo4j, DynamoDB, Couchbase, InfluxDB, Snowflake            |
 | Factories           | ✅ Complete   | Wrappers for each DB implementation                        |
 | Enum                | ✅ Complete   | All DB types listed                                        |
 | Auth Model          | ✅ Complete   | Secure, extensible                                         |
