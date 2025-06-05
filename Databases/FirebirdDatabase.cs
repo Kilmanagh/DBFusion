@@ -3,24 +3,24 @@ using System.Data;
 using System.Threading.Tasks;
 using DBFusion.Interfaces;
 using DBFusion.Models;
-using Oracle.ManagedDataAccess.Client;
+using FirebirdSql.Data.FirebirdClient;
 
 namespace DBFusion.Databases
 {
-    public class OracleDatabase : IDatabase
+    public class FirebirdDatabase : IDatabase
     {
         private readonly string _connectionString;
-        private OracleConnection _connection;
-        private OracleTransaction _transaction;
+        private FbConnection _connection;
+        private FbTransaction _transaction;
 
-        public OracleDatabase(DbAuth auth)
+        public FirebirdDatabase(DbAuth auth)
         {
             _connectionString = auth.ConnectionString;
         }
 
         public async Task<bool> ConnectAsync()
         {
-            _connection = new OracleConnection(_connectionString);
+            _connection = new FbConnection(_connectionString);
             await _connection.OpenAsync();
             return _connection.State == ConnectionState.Open;
         }
@@ -33,57 +33,37 @@ namespace DBFusion.Databases
 
         public async Task<int> InsertAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
-            {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
+            using (var command = new FbCommand(query, _connection, _transaction))
                 return await command.ExecuteNonQueryAsync();
-            }
         }
 
         public async Task<int> DeleteAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
-            {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
+            using (var command = new FbCommand(query, _connection, _transaction))
                 return await command.ExecuteNonQueryAsync();
-            }
         }
 
         public async Task<DataTable> SelectAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
+            using (var command = new FbCommand(query, _connection, _transaction))
+            using (var adapter = new FbDataAdapter(command))
             {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
-                using (var reader = await command.ExecuteReaderAsync())
-                {
-                    var dataTable = new DataTable();
-                    dataTable.Load(reader);
-                    return dataTable;
-                }
+                var dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
             }
         }
 
         public async Task<int> UpdateAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
-            {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
+            using (var command = new FbCommand(query, _connection, _transaction))
                 return await command.ExecuteNonQueryAsync();
-            }
         }
 
         public async Task ExecuteCommandAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
-            {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
+            using (var command = new FbCommand(query, _connection, _transaction))
                 await command.ExecuteNonQueryAsync();
-            }
         }
 
         public async Task BeginTransactionAsync()

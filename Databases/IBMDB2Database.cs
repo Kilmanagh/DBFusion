@@ -3,24 +3,25 @@ using System.Data;
 using System.Threading.Tasks;
 using DBFusion.Interfaces;
 using DBFusion.Models;
-using Oracle.ManagedDataAccess.Client;
 
 namespace DBFusion.Databases
 {
-    public class OracleDatabase : IDatabase
+    using IBM.Data.Db2;
+
+    public class IBMDb2Database : IDatabase
     {
         private readonly string _connectionString;
-        private OracleConnection _connection;
-        private OracleTransaction _transaction;
+        private DB2Connection _connection;
+        private DB2Transaction _transaction;
 
-        public OracleDatabase(DbAuth auth)
+        public IBMDb2Database(DbAuth auth)
         {
             _connectionString = auth.ConnectionString;
         }
 
         public async Task<bool> ConnectAsync()
         {
-            _connection = new OracleConnection(_connectionString);
+            _connection = new DB2Connection(_connectionString);
             await _connection.OpenAsync();
             return _connection.State == ConnectionState.Open;
         }
@@ -33,57 +34,37 @@ namespace DBFusion.Databases
 
         public async Task<int> InsertAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
-            {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
+            using (var command = new DB2Command(query, _connection, _transaction))
                 return await command.ExecuteNonQueryAsync();
-            }
         }
 
         public async Task<int> DeleteAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
-            {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
+            using (var command = new DB2Command(query, _connection, _transaction))
                 return await command.ExecuteNonQueryAsync();
-            }
         }
 
         public async Task<DataTable> SelectAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
+            using (var command = new DB2Command(query, _connection, _transaction))
+            using (var adapter = new DB2DataAdapter(command))
             {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
-                using (var reader = await command.ExecuteReaderAsync())
-                {
-                    var dataTable = new DataTable();
-                    dataTable.Load(reader);
-                    return dataTable;
-                }
+                var dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
             }
         }
 
         public async Task<int> UpdateAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
-            {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
+            using (var command = new DB2Command(query, _connection, _transaction))
                 return await command.ExecuteNonQueryAsync();
-            }
         }
 
         public async Task ExecuteCommandAsync(string query)
         {
-            using (var command = new OracleCommand(query, _connection))
-            {
-                if (_transaction != null)
-                    command.Transaction = _transaction;
+            using (var command = new DB2Command(query, _connection, _transaction))
                 await command.ExecuteNonQueryAsync();
-            }
         }
 
         public async Task BeginTransactionAsync()

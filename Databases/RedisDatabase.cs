@@ -9,10 +9,12 @@ using DBFusion.Factories;
 
 namespace DBFusion.Databases
 {
-    public class RedisDatabase : IDatabase
+    public class RedisDatabase : DBFusion.Interfaces.IDatabase
     {
         private readonly string _connectionString;
+
         private ConnectionMultiplexer _redis;
+
         private StackExchange.Redis.IDatabase _db;
 
         public RedisDatabase(DbAuth auth)
@@ -42,6 +44,7 @@ namespace DBFusion.Databases
                 bool result = await _db.StringSetAsync(parts[1], parts[2]);
                 return result ? 1 : 0;
             }
+
             return 0;
         }
 
@@ -54,6 +57,7 @@ namespace DBFusion.Databases
                 bool result = await _db.KeyDeleteAsync(parts[1]);
                 return result ? 1 : 0;
             }
+
             return 0;
         }
 
@@ -69,6 +73,7 @@ namespace DBFusion.Databases
                 var value = await _db.StringGetAsync(parts[1]);
                 dataTable.Rows.Add(parts[1], value.ToString());
             }
+
             return dataTable;
         }
 
@@ -85,27 +90,29 @@ namespace DBFusion.Databases
         }
 
         public async Task BeginTransactionAsync() => await Task.CompletedTask; // Not supported natively
-        public async Task CommitTransactionAsync() => await Task.CompletedTask;
-        public async Task RollbackTransactionAsync() => await Task.CompletedTask;
-    }
 
-    public static IDatabase Create(DatabaseTypes type, DbAuth auth)
-    {
-        switch (type)
+        public async Task CommitTransactionAsync() => await Task.CompletedTask;
+
+        public async Task RollbackTransactionAsync() => await Task.CompletedTask;
+
+        public static DBFusion.Interfaces.IDatabase Create(DatabaseType type, DbAuth auth)
         {
-            case DatabaseTypes.ORACLE:
-                return new OracleDatabase(auth);
-            case DatabaseTypes.MARIADB:
-                return new MariaDbDatabase(auth);
-            case DatabaseTypes.CASSANDRA:
-                return new CassandraDatabase(auth);
-            case DatabaseTypes.REDIS:
-                return new RedisDatabase(auth);
-            case DatabaseTypes.ELASTICSEARCH:
-                return new ElasticsearchDatabase(auth);
-            // ...existing cases...
-            default:
-                throw new NotSupportedException($"Database type {type} is not supported.");
+            switch (type)
+            {
+                case DatabaseType.ORACLE:
+                    return new OracleDatabase(auth);
+                case DatabaseType.MARIADB:
+                    return new MariaDbDatabase(auth);
+                case DatabaseType.CASSANDRA:
+                    return new CassandraDatabase(auth);
+                case DatabaseType.REDIS:
+                    return new RedisDatabase(auth);
+
+                // ...existing cases...
+                default:
+                    throw new NotSupportedException($"Database type {type} is not supported.");
+            }
         }
+
     }
 }
