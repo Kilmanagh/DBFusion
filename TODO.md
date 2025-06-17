@@ -16,6 +16,7 @@ This document tracks the progress and requirements for the DBFusion project. Tas
 - [ ] Support for database transactions across multiple engines
 - [ ] Connection pooling and performance optimization
 - [ ] Configuration system for managing multiple connection strings
+- [ ] Add a project with a GUI using avaloniaui that can perform all functions and plugins with the proper buttons and controls. 
 - [ ] Release stable NuGet package
 
 ---
