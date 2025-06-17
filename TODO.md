@@ -25,23 +25,23 @@ This document tracks the progress and requirements for the DBFusion project. Tas
 
 - [ ] Finalize and document the public API
 - [ ] Add support for additional databases:
-    - [x] Oracle Database (implemented, needs real CRUD logic)
-    - [x] MariaDB (implemented, needs real CRUD logic)
-    - [x] Cassandra (implemented, needs real CRUD logic)
-    - [x] Redis (implemented, needs real CRUD logic)
-    - [x] Neo4j (implemented, needs real CRUD logic)
-    - [x] DynamoDB (implemented, needs real CRUD logic)
-    - [x] Couchbase (implemented, needs real CRUD logic)
-    - [x] InfluxDB (implemented, needs real CRUD logic)
-    - [x] Snowflake (implemented, needs real CRUD logic)
+    - [ ] Oracle Database (NOT in factory, needs implementation)
+    - [ ] MariaDB (NOT in factory, needs implementation)
+    - [ ] Cassandra (NOT in factory, needs implementation)
+    - [ ] Redis (NOT in factory, needs implementation)
+    - [ ] Neo4j (NOT in factory, needs implementation)
+    - [ ] DynamoDB (NOT in factory, needs implementation)
+    - [ ] Couchbase (NOT in factory, needs implementation)
+    - [ ] InfluxDB (NOT in factory, needs implementation)
+    - [ ] Snowflake (NOT in factory, needs implementation)
     - [x] MongoDB (implemented, needs real CRUD logic)
     - [x] PostgreSQL (implemented, needs real CRUD logic)
     - [x] MySQL (implemented, needs real CRUD logic)
     - [x] SQLite (implemented, needs real CRUD logic)
     - [x] Access (implemented, needs real CRUD logic)
-    - [x] IBM Db2 (experimental, needs real CRUD logic)
-    - [x] Firebird (experimental, needs real CRUD logic)
-    - [x] LiteDB (experimental, needs real CRUD logic)
+    - [x] IBM Db2 (implemented, needs real CRUD logic)
+    - [x] Firebird (implemented, needs real CRUD logic)
+    - [x] LiteDB (implemented, needs real CRUD logic)
     - [ ] Firestore / Firebase Realtime Database 
     - [x] RavenDB (implemented, needs real CRUD logic)
     - [x] Berkeley DB (implemented, needs real CRUD logic)
@@ -100,13 +100,13 @@ This document tracks the progress and requirements for the DBFusion project. Tas
 
 ## Review Summary Table
 
-| Area                | Status        | Notes                                                      |
-|---------------------|---------------|------------------------------------------------------------|
-| Solution/Project    | ✅ Complete    |                                                            |
-| Core DBs            | ✅ Complete    | SQL Server, PostgreSQL, MongoDB, MySQL, SQLite, Access     |
-| New DBs (Top 5)     | ✅ Complete    | Oracle, MariaDB, Cassandra, Redis, Neo4j                   |
-| Next 5 DBs          | ✅ Complete    | DynamoDB, Couchbase, InfluxDB, Snowflake, (Pending real CRUD)|
-| Other DBs           | 🚧 In Progress | IBM Db2, Firebird, LiteDB, Firestore/Firebase, Azure SQL, AWS RDS, Google Cloud SQL, Sybase, QuickBooks, VoltDB, Tarantool, LevelDB, ScyllaDB, Memcached |
+| Area                | Status        | Notes                                                              |
+|---------------------|---------------|--------------------------------------------------------------------|
+| Solution/Project    | ✅ Complete    |                                                                    |
+| Core DBs            | ✅ Complete    | SQL Server, PostgreSQL, MongoDB, MySQL, SQLite, Access (All in Factory) |
+| New DBs (Top 5)     | ✅ Complete    | BerkeleyDB, Firebird, IBMDb2, LiteDB, RavenDB (All in Factory, Pending real CRUD logic) |
+| Next 5 DBs          | ❌ Not Implemented | Oracle, MariaDB, Cassandra, Redis, Neo4j (Not in Factory. Marked complete in error previously) |
+| Other DBs           | 🚧 In Progress | Firestore/Firebase, Azure SQL, AWS RDS, Google Cloud SQL, Sybase, QuickBooks, VoltDB, Tarantool, LevelDB, ScyllaDB, Memcached (Status reflects items not yet in factory) |
 
 ---
 
